@@ -258,3 +258,23 @@ footer .infos{
     width: 50%;
     justify-content: space-between;
 }
+
+/* Icones fixos na lateral */
+
+body{
+    position: relative;
+}
+
+.icons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: fixed;
+    right: 10px;
+    top: 40%;
+
+}
+
+.icons img{
+    width: 40px;
+}
