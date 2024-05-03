@@ -20,7 +20,7 @@ main section .intro{
 
 main .intro .card{
     background-color: white;
-    width: 700px;
+    width: 800px;
     height: 200px;
     display: flex;
     align-items: center;
@@ -31,8 +31,8 @@ main .intro .card{
 
 main .intro .card::after{
     content: "";
-    width: 700px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     position: absolute;
     left: 8px;
     top: 8px;
