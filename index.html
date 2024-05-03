@@ -10,18 +10,19 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav id="navbar">
             <img src="assets/default-assets/img/Simbolo1.png" alt="torres-logo">
-            <ul type="none">
+            <ul type="none" id="nav-menu-items">
                 <li><a href="#index.html"><span style="color: rgb(212,19,23);">Home</span></a></li>
                 <li><a href="pages/why-us/why-us.html">Por que a gente?</a></li>
                 <li><a href="#" onclick="scrollToSection('.nossos-servicos')">Nossos serviços</a></li>
                 <li><a href="pages/operating market/operating-market.html">Mercado de atuação</a></li>
                 <li><a href="#" onclick="scrollToSection('footer')">Fale conosco</a></li>
             </ul>
-            <img src="assets/default-assets/img/Simbolo2.png" alt="siemens-logo">
+            <img src="assets/default-assets/img/Simbolo2.png" alt="siemens-logo" id="siemens-logo">
+            <button class="hamburguer"><img src="assets/default-assets/img/menu-outline.svg" alt="" style="height: 50px;"></button>
         </nav>
-        <section class="intro" style="background-image: url('assets/index/img/fundo.png');">
+        <section class="intro" style="background-image: url('assets/index/img/fundo.png');" id="introducao">
             <div class="box">
                 <img src="assets/default-assets/img/Simbolo1.png" alt="torres-logo">
                 <div class="box2">
@@ -117,5 +118,25 @@
         <li><a href="#"><img src="assets/default-assets/img/linkedin-icon.png" alt="linkedin icon"></a></li>
     </ul>
     <script src="pages/index/index.js"></script>
+    <script>
+        let isActive = false,
+        navbar = document.querySelector('#navbar'), navElements = document.querySelector('#nav-menu-items'), image_sie = document.querySelector('#siemens-logo'),introducao = document.querySelector('#introducao'), newNavbar = document.createElement('navbar'), btnToggle = document.querySelector('.hamburguer')
+        btnToggle.addEventListener('click', (e) => {
+            if (!isActive) {
+                newNavbar.appendChild(navElements) 
+                newNavbar.classList.add('navbar-phone')
+                navbar.parentElement.append(newNavbar)
+                navbar.parentElement.append(introducao)
+                btnToggle.parentElement.removeChild(btnToggle)
+                navbar.append(image_sie)
+                navbar.append(btnToggle)
+                isActive = true
+            // document.querySelector('#nav-menu-items').classList.toggle('none');
+            } else {
+                document.querySelector('header').removeChild(newNavbar)
+                isActive = false
+            }
+        })
+    </script>
 </body>
 </html>
