@@ -1,0 +1,27 @@
+/* Intro */
+header .intro{
+    height: calc(100vh - 136px);
+    background: no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+header .intro .box{
+    background-color: #f2f2f2;
+    position: absolute;
+    width: 600px;
+    height: 250px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    top: calc(50% - 150px);
+    right: 20%;
+    padding: 30px 100px 30px 30px;
+}
+
+header h1{
+    color: #1a2b6d;
+    font-size: 66px;
+    font-weight: normal;
+}
+
