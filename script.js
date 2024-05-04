@@ -7,8 +7,12 @@ function scrollToSection(className) {
 
 function navegateAndScroll(locationPage, className) {
     window.location.href = locationPage;
-    setTimeout(function(){
-        var section = document.querySelector(className);
-        section.scrollIntoView({ behavior: 'smooth' })
-    }, 2000);
+    setTimeout(
+        function () {
+            var section = document.querySelector(className);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    ,10000);
 }
