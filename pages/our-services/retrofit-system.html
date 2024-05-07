@@ -10,17 +10,31 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img src="../../assets/default-assets/img/Simbolo1.png" alt="torres-logo">
-            <ul type="none">
-                <li><a href="../../index.html"><span style="color: rgb(212,19,23);">Home</span></a></li>
-                <li><a href="../why-us/why-us.html">Por que a gente?</a></li>
-                <li><a href="#">Nossos serviços</a></li>
-                <li><a href="../operating market/operating-market.html">Mercado de atuação</a></li>
-                <li><a href="#">Fale conosco</a></li>
+        <nav id="navbar">
+            <img src="assets/default-assets/img/Simbolo1.png" alt="torres-logo">
+            <ul type="none" id="nav-menu-items">
+                <li><a href="#index.html"><span style="color: rgb(212,19,23);">Home</span></a></li>
+                <li><a href="pages/why-us/why-us.html">Por que a gente?</a></li>
+                <li><a href="#" onclick="scrollToSection('.nossos-servicos')">Nossos serviços</a></li>
+                <li><a href="pages/operating market/operating-market.html">Mercado de atuação</a></li>
+                <li><a href="#" onclick="scrollToSection('footer')">Fale conosco</a></li>
             </ul>
-            <img src="../../assets/default-assets/img/Simbolo2.png" alt="siemens-logo">
+            <img src="assets/default-assets/img/Simbolo2.png" alt="siemens-logo" id="siemens-logo">
+            <div class="hamburguer" id="nav-icon1">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
         </nav>
+        <navbar class="navbar-phone none">
+            <ul type="none" id="nav-menu-items">
+                <li><a href="#index.html">Home</a></li>
+                <li><a href="pages/why-us/why-us.html">Por que a gente?</a></li>
+                <li><a href="#" onclick="scrollToSection('.nossos-servicos')">Nossos serviços</a></li>
+                <li><a href="pages/operating market/operating-market.html">Mercado de atuação</a></li>
+                <li><a href="#" onclick="scrollToSection('footer')">Fale conosco</a></li>
+            </ul>
+        </navbar>
     </header>
     <main>
         <section>
@@ -71,4 +85,5 @@
         <li><a href="#"><img src="../../assets/default-assets/img/linkedin-icon.png" alt="linkedin icon"></a></li>
     </ul>
     <script src="our-services.js"></script>
+    <script src="../default/navbarButton.js"></script>
 </body>
