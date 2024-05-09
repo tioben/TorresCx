@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spinnaker&display=swap">
 </head>
 <body>
-    <header>
+    <header class="header">
         <nav class="tablet-computer">
             <img src="assets/default-assets/img/Simbolo1.png" alt="torres-logo">
             <ul type="none">
@@ -25,13 +25,14 @@
             <div class="box-img">
                 <img src="assets/default-assets/img/Simbolo1.png" alt="torres-logo">
                 <div class="row">
-                    <h1>MENU</h1>
-                    <span>|||</span>
+                    <input style="display: none;" type="checkbox" id="meuCheckbox" name="meuCheckbox">
+                    <label class="menu-text" for="meuCheckbox">MENU</label>
+                    <label class="hamburguer" for="meuCheckbox">|||</label>
                 </div>
                 <img src="assets/default-assets/img/Simbolo2.png" alt="siemens-logo">
             </div>
-            <ul type="none">
-                <li><a href="#index.html"><span style="color: rgb(212,19,23);">Home</span></a></li>
+            <ul type="none" id="ulMenu">
+                <li><a href="#" onclick="scrollToSection('header')">Home</a></li>
                 <li><a href="pages/why-us/why-us.html">Por que a gente?</a></li>
                 <li><a href="#" onclick="scrollToSection('.nossos-servicos')">Nossos serviços</a></li>
                 <li><a href="pages/operating market/operating-market.html">Mercado de atuação</a></li>
@@ -114,11 +115,11 @@
             <button type="submit">Enviar</button>
           </form>
           <div class="infos">
-            <div class="box">
-                <p>Rua Doutor Diogo de Faria 775, Sala 123/124</p>
-                <p>Vila Clementino, São Paulo - SP</p>
-                <p>CEP 04037-002</p>
-            </div>
+            <ul class="box" type="none">
+                <li>Rua Doutor Diogo de Faria 775, Sala 123/124</li>
+                <li>Vila Clementino, São Paulo - SP</li>
+                <li>CEP 04037-002</li>
+            </ul>
             <div class="box">
                 <p>Fone(SP): +55 11 3042-8559</p>
                 <p>Fone(PE): +55 81 4042-0200</p>
