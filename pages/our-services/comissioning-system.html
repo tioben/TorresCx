@@ -10,16 +10,37 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="tablet-computer">
             <img src="../../assets/default-assets/img/Simbolo1.png" alt="torres-logo">
             <ul type="none">
-                <li><a href="../../index.html"><span style="color: rgb(212,19,23);">Home</span></a></li>
+                <li><a href="../../index.html">Home</a></li>
                 <li><a href="../why-us/why-us.html">Por que a gente?</a></li>
-                <li><a href="#">Nossos serviços</a></li>
+                <li><a href="../../index.html">Nossos serviços</a></li>
                 <li><a href="../operating market/operating-market.html">Mercado de atuação</a></li>
-                <li><a href="#">Fale conosco</a></li>
+                <li><a href="../contact/contact.html">Fale conosco</a></li>
             </ul>
             <img src="../../assets/default-assets/img/Simbolo2.png" alt="siemens-logo">
+        </nav>
+        <nav class="mobile">
+            <div class="box-img">
+                <img src="../../assets/default-assets/img/Simbolo1.png" alt="torres-logo">
+                <div class="row">
+                    <input style="display: none;" type="checkbox" id="meuCheckbox" name="meuCheckbox">
+                    <label class="menu-text" for="meuCheckbox">MENU</label>
+                    <label class="hamburguer" for="meuCheckbox">
+                        <span id="spanHamburguer1">|</span>
+                        <span id="spanHamburguer2">|</span>
+                        <span id="spanHamburguer3">|</span>
+                    </label>
+                </div>
+            </div>
+            <ul type="none" id="ulMenu">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../why-us/why-us.html">Por que a gente?</a></li>
+                <li><a href="../../index.html">Nossos serviços</a></li>
+                <li><a href="../operating market/operating-market.html">Mercado de atuação</a></li>
+                <li><a href="../contact/contact.html">Fale conosco</a></li>
+            </ul>
         </nav>
     </header>
     <main>
@@ -61,11 +82,11 @@
             <button type="submit">Enviar</button>
           </form>
           <div class="infos">
-            <div class="box">
-                <p>Rua Doutor Diogo de Faria 775, Sala 123/124</p>
-                <p>Vila Clementino, São Paulo - SP</p>
-                <p>CEP 04037-002</p>
-            </div>
+            <ul class="box" type="none">
+                <li>Rua Doutor Diogo de Faria 775, Sala 123/124</li>
+                <li>Vila Clementino, São Paulo - SP</li>
+                <li>CEP 04037-002</li>
+            </ul>
             <div class="box">
                 <p>Fone(SP): +55 11 3042-8559</p>
                 <p>Fone(PE): +55 81 4042-0200</p>
@@ -75,10 +96,5 @@
             </div>
           </div>
     </footer>
-    <ul class="icons" type="none">
-        <li><a href="#"><img src="../../assets/default-assets/img/instagram-icon.png" alt="instagram icon"></a></li>
-        <li><a href="#"><img src="../../assets/default-assets/img/facebook-icon.png" alt="facebook icon"></a></li>
-        <li><a href="#"><img src="../../assets/default-assets/img/linkedin-icon.png" alt="linkedin icon"></a></li>
-    </ul>
     <script src="../../script.js"></script>
 </body>

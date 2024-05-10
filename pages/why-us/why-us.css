@@ -1,53 +1,171 @@
-/* Intro */
-header .intro{
-    height: calc(100vh - 136px);
-    background: no-repeat center fixed;
-    background-size: cover;
-    position: relative;
+/* Celulares */
+@media screen and (max-width: 767px){
+    /* Intro */
+    header .intro{
+        height: 100%;
+        background: no-repeat center fixed;
+        background-size: cover;
+        position: relative;
+    }
+
+    header .intro .box{
+        background-color: #f2f2f2;
+        position: absolute;
+        width: 100vw;
+        height: 250px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        top: calc(50% - 150px);
+        right: 0%;
+        padding: 15px
+    }
+
+    header h1{
+        color: #1a2b6d;
+        font-size: 45px;
+        font-weight: normal;
+    }
+
+    /* Sessão - Por que a gente? */
+    main .why-us{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    main .why-us .box{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+    }
+
+    main .why-us h1{
+        font-weight: normal;
+        color: #1a2b6d;
+        font-size: 28px;
+        text-align: center;
+    }
+
+    main .why-us p{
+        font-size: 16px;
+    }
+
 }
 
-header .intro .box{
-    background-color: #f2f2f2;
-    position: absolute;
-    width: 600px;
-    height: 250px;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    top: calc(50% - 150px);
-    right: 20%;
-    padding: 30px 100px 30px 30px;
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    /* Intro */
+    header .intro{
+        height: 100%;
+        background: no-repeat center fixed;
+        background-size: cover;
+        position: relative;
+    }
+
+    header .intro .box{
+        background-color: #f2f2f2;
+        position: absolute;
+        width: 600px;
+        height: 250px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        top: calc(50% - 150px);
+        right: 20%;
+        padding: 30px 100px 30px 30px;
+    }
+
+    header h1{
+        color: #1a2b6d;
+        font-size: 66px;
+        font-weight: normal;
+    }
+
+    /* Sessão - Por que a gente? */
+    main .why-us{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+
+    main .why-us .box{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+    }
+
+    main .why-us h1{
+        font-weight: normal;
+        color: #1a2b6d;
+        font-size: 28px;
+    }
+
+    main .why-us p{
+        font-size: 16px;
+    }
 }
 
-header h1{
-    color: #1a2b6d;
-    font-size: 66px;
-    font-weight: normal;
+/* Computadores */
+@media screen and (min-width: 1024px){
+    /* Intro */
+    header .intro{
+        height: 100%;
+        background: no-repeat center fixed;
+        background-size: cover;
+        position: relative;
+    }
+
+    header .intro .box{
+        background-color: #f2f2f2;
+        position: absolute;
+        width: 600px;
+        height: 250px;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        top: calc(50% - 150px);
+        right: 20%;
+        padding: 30px 100px 30px 30px;
+    }
+
+    header h1{
+        color: #1a2b6d;
+        font-size: 66px;
+        font-weight: normal;
+    }
+
+    /* Sessão - Por que a gente? */
+    main .why-us{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px;
+    }
+
+    main .why-us .box{
+        max-width: 1024px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+    }
+
+    main .why-us h1{
+        font-weight: normal;
+        color: #1a2b6d;
+        font-size: 28px;
+    }
+
+    main .why-us p{
+        font-size: 16px;
+    }
 }
 
-/* Sessão - Por que a gente? */
-main .why-us{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-}
-
-main .why-us .box{
-    width: 800px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-}
-
-main .why-us h1{
-    font-weight: normal;
-    color: #1a2b6d;
-    font-size: 28px;
-}
-
-main .why-us p{
-    font-size: 16px;
-}

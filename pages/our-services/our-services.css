@@ -1,75 +1,240 @@
-header{
-    height: auto;
+/* Celular */
+@media screen and (max-width: 767px){
+    header{
+        height: auto;
+    }
+
+    main section{
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section .intro{
+        background-color: #1a2b6d;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 90px;
+    }
+
+    main .intro .card{
+        background-color: white;
+        width: 80%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        position: relative;
+        padding: 10px;
+    }
+
+    main .intro .card::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        background-color: none;
+        border: white solid 3px;
+    }
+
+    main .card h1{
+        font-size: 40px;
+        color: #1a2b6d;
+        font-weight: normal;
+    }
+
+    main article{
+        padding: 30px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    main article::after{
+        content: "";
+        height: 3px;
+        width: 100px;
+        background-color: #1a2b6d;
+        position: absolute;
+        top: 80px;
+        left: -130px;
+    }
+
+    main article p{
+        font: normal normal normal 16px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
+        line-height: 40px;
+
+    }
+
 }
 
-main section{
-    background-color: #f2f2f2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    header{
+        height: auto;
+    }
+
+    main section{
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section .intro{
+        background-color: #1a2b6d;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 80px;
+    }
+
+    main .intro .card{
+        background-color: white;
+        width: 700px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 10px;
+        position: relative;
+    }
+
+    main .intro .card::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        background-color: none;
+        border: white solid 3px;
+    }
+
+
+
+    main .card h1{
+        font-size: 66px;
+        color: #1a2b6d;
+        font-weight: normal;
+    }
+
+    main article{
+        padding: 60px 0;
+        width: 700px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+    main article::after{
+        content: "";
+        height: 3px;
+        width: 100px;
+        background-color: #1a2b6d;
+        position: absolute;
+        top: 80px;
+        left: -130px;
+    }
+
+    main article p{
+        font: normal normal normal 16px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
+        line-height: 40px;
+
+    }
+
 }
 
-main section .intro{
-    background-color: #1a2b6d;
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Computador */
+@media screen and (min-width: 1023px){
+    header{
+        height: auto;
+    }
+
+    main section{
+        margin-top: 130px;
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main section .intro{
+        background-color: #1a2b6d;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .intro .card{
+        background-color: white;
+        width: 800px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 60px 100px 60px 60px;
+        position: relative;
+    }
+
+    main .intro .card::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        background-color: none;
+        border: white solid 3px;
+    }
+
+
+
+    main .card h1{
+        font-size: 66px;
+        color: #1a2b6d;
+        font-weight: normal;
+    }
+
+    main article{
+        padding: 60px 0;
+        width: 700px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+    main article::after{
+        content: "";
+        height: 3px;
+        width: 100px;
+        background-color: #1a2b6d;
+        position: absolute;
+        top: 80px;
+        left: -130px;
+    }
+
+    main article p{
+        font: normal normal normal 16px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
+        line-height: 40px;
+
+    }
+
 }
 
-main .intro .card{
-    background-color: white;
-    width: 800px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    padding: 60px 100px 60px 60px;
-    position: relative;
-}
-
-main .intro .card::after{
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 8px;
-    top: 8px;
-    background-color: none;
-    border: white solid 3px;
-}
-
-
-
-main .card h1{
-    font-size: 66px;
-    color: #1a2b6d;
-    font-weight: normal;
-}
-
-main article{
-    padding: 60px 0;
-    width: 700px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 80px;
-}
-
-main article::after{
-    content: "";
-    height: 3px;
-    width: 100px;
-    background-color: #1a2b6d;
-    position: absolute;
-    top: 80px;
-    left: -130px;
-}
-
-main article p{
-    font: normal normal normal 16px/1.4em helvetica-w01-light,helvetica-w02-light,sans-serif;
-    line-height: 40px;
-
-}
