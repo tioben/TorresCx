@@ -41,7 +41,7 @@
     header .mobile ul{
         position: fixed;
         top: -160px; /*aberto: 90px / fechado: -161px/ var(--top-value)*/
-        left: 31%;
+        right: 0;
         width: 350px;
         background-color: white;
         display: flex;
@@ -105,6 +105,7 @@
         align-items: center;
         justify-content: end;
         color: #515151;
+        padding-right: 10px;
     }
 
     header .mobile .row .hamburguer{
@@ -260,13 +261,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 60px;
+        gap: 30px;
         width: 100%;
         padding: 0px 5px 0px 0px;
     }
     
     header .tablet-computer ul li{
-        width: 80px;
         text-align: center;
     }
 
@@ -285,13 +285,13 @@
         color: rgb(212,19,23);
     }
     
-    header img{
+    header .tablet-computer img{
         width: auto;
         height: 80px;
         object-fit: contain;
     }
     
-    header img:last-of-type{
+    header .tablet-computer img:last-of-type{
         height: 60px;
     }
     
@@ -426,13 +426,13 @@
         color: rgb(212,19,23);
     }
     
-    header img{
+    header .tablet-computer img{
         width: auto;
         height: 130px;
         object-fit: contain;
     }
     
-    header img:last-of-type{
+    header .tablet-computer img:last-of-type{
         height: 100px;
     }
     
