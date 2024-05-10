@@ -14,7 +14,7 @@
 }
 
 /* Celulares */
-@media screen and (max-width: 930px){
+@media screen and (max-width: 767px){
     /* Header */
     header{
         height: 100vh;
@@ -103,17 +103,41 @@
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: end;
         color: #515151;
     }
 
     header .mobile .row .hamburguer{
-        margin-left: 10px;
+        margin-left: 30px;
         font-size: 16px;
         font-weight: normal;
         transform: rotate(90deg);
         cursor: pointer;
+        position: relative;
     }
+
+    header .mobile .hamburguer span{
+        position: absolute;
+        transition: all 200ms ease-in-out;
+        font-size: 22px;
+    }
+
+    header .mobile .hamburguer span:nth-child(1){
+        left: -8px;
+        transform: rotate(0deg);
+
+    }
+
+    header .mobile .hamburguer span:nth-child(2){
+        left: -2px;
+        opacity: 100;
+    }
+
+    header .mobile .hamburguer span:nth-child(3){
+        left: 4px;
+        transform: rotate(0deg);
+    }
+
 
     header .mobile .menu-text{
         cursor: pointer;
@@ -206,30 +230,10 @@
         border: solid 1px #1a2b6d;
         color: #1a2b6d;
     }
-    
-    /* Icones fixos na lateral */
-    
-    body{
-        position: relative;
-    }
-    
-    .icons{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        position: fixed;
-        right: 10px;
-        top: 40%;
-    
-    }
-    
-    .icons img{
-        width: 40px;
-    }
 }
 
 /* Tablets */
-@media screen and (min-width: 930px) and (max-width: 1279px){
+@media screen and (min-width: 768px) and (max-width: 1023px){
     /* Header */
     header{
         height: 100vh;
@@ -243,7 +247,13 @@
     header .tablet-computer{
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        z-index: 1;
+        top: 0;
+        box-shadow: 0px 0px 10px rgba(81, 81, 81, 0.5);
     }
     
     header .tablet-computer ul{
@@ -372,29 +382,10 @@
         color: #1a2b6d;
     }
     
-    /* Icones fixos na lateral */
-    
-    body{
-        position: relative;
-    }
-    
-    .icons{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        position: fixed;
-        right: 10px;
-        top: 40%;
-    
-    }
-    
-    .icons img{
-        width: 40px;
-    }
 }
 
 /* Computadores */
-@media screen and (min-width: 1280px)
+@media screen and (min-width: 1024px)
 {
     /* Header */
     header{
@@ -408,10 +399,14 @@
 
     header .tablet-computer{
         display: flex;
-        justify-content: space-between;
         align-items: center;
-        padding: 30px;
-        height: 136px;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+        background-color: white;
+        z-index: 1;
+        top: 0;
+        box-shadow: 0px 0px 10px rgba(81, 81, 81, 0.5);
     }
     
     header .tablet-computer ul{
@@ -526,25 +521,5 @@
         background-color: white;
         border: solid 1px #1a2b6d;
         color: #1a2b6d;
-    }
-    
-    /* Icones fixos na lateral */
-    
-    body{
-        position: relative;
-    }
-    
-    .icons{
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        position: fixed;
-        right: 10px;
-        top: 40%;
-    
-    }
-    
-    .icons img{
-        width: 40px;
     }
 }
